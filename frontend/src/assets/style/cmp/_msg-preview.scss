@@ -1,0 +1,36 @@
+.msg-preview {
+    display: grid;
+    grid-template:
+        'avatar email'
+        'avatar msg';
+    grid-template-columns: 3rem calc(100% - 3rem - 0.8rem); // 100% - avatar - gap
+    gap: 0.8rem;
+
+    .avatar-container {
+        grid-area: avatar;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 6px;
+
+        .avatar {
+            border-radius: 6px;
+        }
+    }
+    .user-email {
+        grid-area: email;
+        font-size: 1rem;
+        font-weight: 700;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .msg-txt {
+        grid-area: msg;
+        font-size: 1rem;
+        font-weight: 400;
+        font-size: rem(14px);
+        color: $clr6;
+        overflow-wrap: break-word;
+    }
+}

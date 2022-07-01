@@ -1,0 +1,13 @@
+.feed-app {
+    width: 100%;
+    height: 100%;
+    background-color: $clr3;
+    display: flex;
+    flex-direction: column;
+
+    @include for-normal-layout {
+        position: relative;
+        max-height: 50rem;
+        width: 25rem;
+    }
+}

@@ -1,0 +1,8 @@
+.msg-filter {
+    display: flex;
+    justify-content: center;
+
+    .filter-input {
+        @include nice-input;
+    }
+}

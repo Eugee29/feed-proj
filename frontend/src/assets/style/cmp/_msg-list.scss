@@ -1,0 +1,14 @@
+.msg-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+
+    .msgs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
